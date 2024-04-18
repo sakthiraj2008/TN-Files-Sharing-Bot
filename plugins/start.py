@@ -96,7 +96,8 @@ async def start_command(client: Client, message: Message):
             InlineKeyboardButton("🎬 movies group 🎬", url="https://t.me/All_Tamil_movies_request")
 
             ]])
-        await message.reply_text(
+        await message.reply_photo(
+            photo="https://te.legra.ph/file/ba16b6f4c78879c5d5527.jpg",
             text = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
