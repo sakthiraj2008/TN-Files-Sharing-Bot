@@ -85,14 +85,17 @@ async def start_command(client: Client, message: Message):
                 pass
         return
     else:
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
+        reply_markup = InlineKeyboardMarkup([[
+            
+            InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇs 💥", url="https://t.me/DP_BOTZ"),
+            InlineKeyboardButton("💙 Sᴜᴘᴘᴏʀᴛ 💙", url="https://t.me/All_Tamil_movies_request")
+            ],[
+            InlineKeyboardButton("😊 About Me", callback_data = "about"),
+            InlineKeyboardButton("🔒 Close", callback_data = "close")
+             ],[
+            InlineKeyboardButton("🎬 movies group 🎬", url="https://t.me/All_Tamil_movies_request")
+
+            ]])
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
