@@ -20,14 +20,12 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
-    @Bot.on_message(filters.command("start"))
-def start_command(client, message):
-    # Send a welcome message
-    welcome_message = "Welcome to my bot! How can I assist you?"
+    
     client.send_message(message.chat.id, welcome_message)
 
     # React to the message with a thumbs up emoji
     client.send_chat_action(message.chat.id, "❤️‍🔥")
+    
     id = message.from_user.id
     if not await present_user(id):
         try:
