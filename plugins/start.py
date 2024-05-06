@@ -20,7 +20,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
-    @app.on_message(filters.command("start"))
+    @Bot.on_message(filters.command("start"))
 def start_command(client, message):
     # Send a welcome message
     welcome_message = "Welcome to my bot! How can I assist you?"
