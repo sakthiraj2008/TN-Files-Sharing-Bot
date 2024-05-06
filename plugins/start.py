@@ -91,7 +91,7 @@ async def start_command(client: Client, message: Message):
             InlineKeyboardButton("💙 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 💙", url="https://t.me/All_Tamil_movies_request")
             ],[
             InlineKeyboardButton("😊 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞", callback_data = "about"),
-            InlineKeyboardButton("🔒 𝐂𝐥𝐨𝐬𝐞", callback_data = "close")
+            InlineKeyboardButton("🏡 𝐇𝐨𝐦𝐞", callback_data = "Home")
              ],[
             InlineKeyboardButton("🎬 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐪 𝐆𝐫𝐨𝐮𝐩 🎬", url="https://t.me/All_Tamil_movies_request")
 
