@@ -51,12 +51,12 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/All_Tamil_movies_request for support")
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/Dp_Botz")
-        self.LOGGER(__name__).info(f"""DP_BOTZ""")
+        self.LOGGER(__name__).info(f"""🇩 🇵 _🇧 🇴 🇹 🇿""")
         self.username = usr_bot_me.username
         #web-response
         app = web.AppRunner(await web_server())
