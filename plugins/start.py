@@ -125,7 +125,6 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    await message.react(emoji=random.choice(REACTIONS))
     buttons = [
         [
             InlineKeyboardButton(
@@ -160,14 +159,12 @@ async def not_joined(client: Client, message: Message):
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
-    await message.react(emoji=random.choice(REACTIONS))
     msg = await client.send_message(chat_id=message.chat.id, text=WAIT_MSG)
     users = await full_userbase()
     await msg.edit(f"{len(users)} users are using this bot")
 
 @Bot.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
-    await message.react(emoji=random.choice(REACTIONS))
     if message.reply_to_message:
         query = await full_userbase()
         broadcast_msg = message.reply_to_message
