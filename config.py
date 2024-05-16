@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello 👋 {first} 🌈 I can store private files in Specified Channel and other users can access it from special link ✅ Developer @Dp_Botz")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1242556540 1391556668 6168145687").split()):
+    for x in (os.environ.get("ADMINS", "1242556540 1391556668 6168145687 6682189243").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -49,7 +49,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "hello - {username} join my channel 👍 Next Click , Try again ✅ Developer channel @Dp_botz")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{filename}\n𝐉ᴏɪɴ ➠ @AnimesWorldTamil ✅")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
