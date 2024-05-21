@@ -124,7 +124,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = nlineKeyboardMarkup([[
+    buttons = InlineKeyboardMarkup([[
             
             InlineKeyboardButton("💥 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💥", url="https://t.me/DP_BOTZ"),
             InlineKeyboardButton("💙 𝗔𝗻𝗶𝗺𝗲𝘀 💙", url="https://t.me/AnimesWorldTamil")
