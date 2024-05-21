@@ -126,7 +126,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = nlineKeyboardMarkup([[
             
-            InlineKeyboardButton("💥 𝗧𝗮𝗺𝗶𝗹 💥", url="https://t.me/DP_BOTZ"),
+            InlineKeyboardButton("💥 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💥", url="https://t.me/DP_BOTZ"),
             InlineKeyboardButton("💙 𝗔𝗻𝗶𝗺𝗲𝘀 💙", url="https://t.me/AnimesWorldTamil")
             ],[
             InlineKeyboardButton("🎬 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎬", url="https://t.me/All_Tamil_movies_request")
