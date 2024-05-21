@@ -124,22 +124,14 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                "❤️‍🔥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ❤️‍🔥",
-                url = client.invitelink)
-        ]
-    ]
-@Bot.on_message(filters.command('start') & filters.private)
-async def not_joined(client: Client, message: Message):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                "❤️‍🔥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ❤️‍🔥",
-                url = client.invitelink)
-        ]
-    ]
+    buttons = nlineKeyboardMarkup([[
+            
+            InlineKeyboardButton("💥 𝗧𝗮𝗺𝗶𝗹 💥", url="https://t.me/DP_BOTZ"),
+            InlineKeyboardButton("💙 𝗔𝗻𝗶𝗺𝗲𝘀 💙", url="https://t.me/AnimesWorldTamil")
+            ],[
+            InlineKeyboardButton("🎬 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🎬", url="https://t.me/All_Tamil_movies_request")
+
+            ]])
     try:
         buttons.append(
             [
