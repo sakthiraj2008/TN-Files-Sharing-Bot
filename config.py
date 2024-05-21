@@ -1,4 +1,4 @@
-#(©)CodeXBotz
+# ©Dp_botz©
 
 
 
@@ -33,6 +33,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "mongodb")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002008853384"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002050387186"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -49,7 +50,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "hello - {username} join my channel 👍 Next Click , Try again ✅ Developer channel @Dp_botz")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{filename}\n𝐉ᴏɪɴ ➠ @AnimesWorldTamil ✅")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{filename}\n\n𝐉ᴏɪɴ ➠ @AnimesWorldTamil ✅")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
