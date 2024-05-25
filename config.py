@@ -33,12 +33,13 @@ DB_NAME = os.environ.get("DATABASE_NAME", "mongodb")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002008853384"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1002050387186"))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello 👋 {first} 🌈 I can store private files in Specified Channel and other users can access it from special link ✅ Developer @Dp_Botz")
+START_MSG = os.environ.get("START_MESSAGE", "Hello 👋 {first} 💙 I can store private files in Specified Channel and other users can access it from special link ✅ Developer @Dp_Botz")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1242556540 1391556668 6168145687 6682189243 5506500271").split()):
