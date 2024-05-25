@@ -20,3 +20,8 @@ class JoinReqs:
         else:
             return False
 
+    async def add_user(self, user_id, first_name, username, date):
+        try:
+            await self.col.insert_one({"_id": (user_id),"user_id": (user_id), "first_name": first_name, "username": username, "date": date})
+        except:
+            pass
