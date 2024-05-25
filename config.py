@@ -3,11 +3,11 @@
 
 
 
-import os
+import os, re
 import logging
 from logging.handlers import RotatingFileHandler
 
-
+id_pattern = re.compile(r'^.\d+$')
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6729268257:AAH7mrsJpwdeGLWJmsgfJ_5j9yanXX5zPoU")
@@ -63,6 +63,10 @@ USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
+
+
+# Join Request Feature 
+REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
