@@ -64,9 +64,10 @@ USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
 
-
-# Join Request Feature 
-REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
+# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1001793064603")
+REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
+JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
