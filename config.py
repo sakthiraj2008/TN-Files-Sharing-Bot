@@ -33,8 +33,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "mongodb")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002008853384"))
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002038571576') # request channel id ( make sure bot is admin )
-REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
+
 
 
 
