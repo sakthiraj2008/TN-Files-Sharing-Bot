@@ -87,13 +87,13 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup([[
             
-            InlineKeyboardButton("💥 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💥", url="https://t.me/DP_BOTZ"),
-            InlineKeyboardButton("💙 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 💙", url="https://t.me/All_Tamil_movies_request")
+            InlineKeyboardButton("💥 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💥", url="https://t.me/TN_BOTZ"),
+            InlineKeyboardButton("💙 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 💙", url="https://t.me/+eBzYtdaY7Bc2ZDVl")
             ],[
             InlineKeyboardButton("😊 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞", callback_data = "about"),
             InlineKeyboardButton("🔐 𝐂𝐥𝐨𝐬𝐞", callback_data = "Home")
              ],[
-            InlineKeyboardButton("🎬 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐪 𝐆𝐫𝐨𝐮𝐩 🎬", url="https://t.me/All_Tamil_movies_request")
+            InlineKeyboardButton("🎬 ANIME REQ GROUP 🎬", url="https://t.me/+3jKq9pIEyfw2MTY1")
 
             ]])
         await message.reply_photo(
@@ -128,7 +128,7 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(
                 "💥 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 💥",
-                url = "https://t.me/+gpohKwVlrOpiNGI1")
+                url = "https://t.me/tn_botz")
         ],
         [
             InlineKeyboardButton(
