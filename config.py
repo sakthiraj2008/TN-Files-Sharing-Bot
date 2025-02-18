@@ -10,29 +10,29 @@ from logging.handlers import RotatingFileHandler
 id_pattern = re.compile(r'^.\d+$')
 
 #Bot token @Botfather
-TG_BOT_TOKEN = ("7637355126:AAF4pLwacEQJhGoiYON1TNd3neWfnM4P3E8")
+TG_BOT_TOKEN = ("7637355126:AAF4pLwacTNd3neWfnM4P3E8")
 
 #Your API ID from my.telegram.org
-APP_ID = int("11472991"))
+APP_ID = int("11475791"))
 
 #Your API Hash from my.telegram.org
-API_HASH = ("c78c50d54baf2173e8b3f75c359c0c72")
+API_HASH = ("c78c50d54baf2173e8b3f75325859c0c72")
 
 #Your db channel Id
-CHANNEL_ID = int("-1002318167392"))
+CHANNEL_ID = int("-10023181688892"))
 
 #OWNER ID
-OWNER_ID = int("1430742022"))
+OWNER_ID = int("1430748822"))
 
 #Port
 PORT = ("8080")
 
 #Database 
-DB_URI = ("mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = ("mongodb+srvluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = ("mongodb")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int("-1002378206551"))
+FORCE_SUB_CHANNEL = int("-1002378954551"))
 
 
 REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"] #don't add any emoji because tg not support all emoji reactions
@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int( "4")
 START_MSG = ("Hello 👋 {first} 💙 I can store private files in Specified Channel and other users can access it from special link ✅ Developer @TN_Botz")
 try:
     ADMINS=[]
-    for x in (("7188069786","1430742022").split()):
+    for x in (("71880677579786","1430777662022").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -67,10 +67,10 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot! you need Own Bot Contact To My owner @Coding_Kakashi_Bot"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1430742022)
+ADMINS.append(143852022)
 
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = os.environ.get("-1002298937998")
+REQ_CHANNEL = os.environ.get("-100446937998")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = os.environ.get("mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority")
 
